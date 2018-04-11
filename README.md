@@ -47,8 +47,6 @@ With `use-package` (including example config):
 	 ("<f6>" . heaven-and-hell-toggle-theme)))
 ```
 
-TODO: write `use-package` example
-
 ### With `straight.el`
 
 ```emacs-lisp
