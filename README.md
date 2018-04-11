@@ -6,7 +6,7 @@ Heaven and Hell - emacs package for easy toggling of light/dark color themes.
 
 ## TLDR:
 
-TODO: write animated demo
+![Demo](demo.gif)
 
 ## Features
 
