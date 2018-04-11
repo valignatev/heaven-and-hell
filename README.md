@@ -8,6 +8,14 @@ Heaven and Hell - emacs package for easy toggling of light/dark color themes.
 
 ![Demo](demo.gif)
 
+## Why?
+
+I constantly switch light and dark theme.
+When it's sunny outside, or I work in a very light room - I use the light theme.
+Otherwise, I prefer dark one.
+So I wrote a bunch of helpers which helped me with this and one day I decided to make a package out of it.
+Hope it'll be useful to anybody else. Cheers!
+
 ## Features
 
 * Define your favorite light and dark themes
