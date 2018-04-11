@@ -19,7 +19,21 @@ Heaven and Hell - emacs package for easy toggling of light/dark color themes.
 
 Heaven and Hell is not yet in melpa. I'm working on that, but for now you have to install it from my repo.
 
-### With `use-package`
+### With `use-package` or manual
+
+First clone the repo:
+
+```shell
+git clone https://github.com/valignatev/heaven-and-hell.git your/site/elisp/path
+```
+
+Manually:
+
+```emacs-lisp
+(require 'heaven-and-hell "your/site/elisp/path/heaven-and-hell/heaven-and-hell.el")
+```
+
+With `use-package`:
 
 TODO: write `use-package` example
 
