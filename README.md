@@ -12,7 +12,7 @@ Heaven and Hell - emacs package for easy toggling of light/dark color themes.
 
 * Define your favorite light and dark themes
 * Choose which one to run by default
-* Switch between them at a single keypress
+* Switch between them with a single keypress
 * Easily roll back to default emacs theme in case of messed faces
 
 ## Installation
