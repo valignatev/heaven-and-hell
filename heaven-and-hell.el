@@ -28,4 +28,4 @@
 ;;;###autoload
 (defun heaven-and-hell-init-hook ()
   (interactive)
-  (heaven-and-hell-clean-load-theme (heaven-and-hell-theme-switch-to) t))
+  (heaven-and-hell-clean-load-theme (heaven-and-hell-theme-switch-to)))
