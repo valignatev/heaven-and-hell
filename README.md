@@ -38,7 +38,7 @@ With `use-package` (including example config):
 (use-package heaven-and-hell
   :load-path "your/site/elisp/path/heaven-and-hell"
   :init
-  (setq heaven-and-hell-theme-type 'dark)
+  (setq heaven-and-hell-theme-type 'dark) ;; Omit to use light by default
   (setq heaven-and-hell-themes
 	'((light . #'tsdh-light)
 	  (dark . #'tsdh-dark)))
