@@ -33,7 +33,19 @@ Manually:
 (require 'heaven-and-hell "your/site/elisp/path/heaven-and-hell/heaven-and-hell.el")
 ```
 
-With `use-package`:
+With `use-package` (including example config):
+```emacs-lisp
+(use-package heaven-and-hell
+  :load-path "your/site/elisp/path/heaven-and-hell"
+  :init
+  (setq heaven-and-hell-theme-type 'dark)
+  (setq heaven-and-hell-themes
+	'((light . #'tsdh-light)
+	  (dark . #'tsdh-dark)))
+  :hook (after-init . heaven-and-hell-init-hook)
+  :bind (("C-c <f6>" . heaven-and-hell-load-default-emacs-theme)
+	 ("<f6>" . heaven-and-hell-toggle-theme)))
+```
 
 TODO: write `use-package` example
 
@@ -45,6 +57,8 @@ TODO: write `use-package` example
 ```
 
 ## Example configuration
+
+For `use-package` configuration look above in installation section
 
 ```emacs-lisp
 ;; Default is 'light
