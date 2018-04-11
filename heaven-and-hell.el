@@ -1,6 +1,6 @@
 (defvar heaven-and-hell-themes
-  '((light . #'spacemacs-light)
-    (dark . #'spacemacs-dark)))
+  '((light . nil)
+    (dark . #'wombat)))
 
 (defvar heaven-and-hell-theme-type 'light)
 
@@ -9,7 +9,8 @@
 
 (defun heaven-and-hell-clean-load-theme (theme)
   (heaven-and-hell-load-default-emacs-theme)
-  (load-theme theme t))
+  (when theme
+    (load-theme theme t)))
 
 (defun heaven-and-hell-toggle-theme ()
   (interactive)
