@@ -12,6 +12,7 @@
   (when theme
     (load-theme theme t)))
 
+;;;###autoload
 (defun heaven-and-hell-toggle-theme ()
   (interactive)
   (if (eq heaven-and-hell-theme-type 'light)
@@ -19,17 +20,12 @@
     (setq heaven-and-hell-theme-type 'light))
   (heaven-and-hell-clean-load-theme (heaven-and-hell-theme-switch-to)))
 
+;;;###autoload
 (defun heaven-and-hell-load-default-emacs-theme ()
   (interactive)
   (mapcar #'disable-theme custom-enabled-themes))
 
+;;;###autoload
 (defun heaven-and-hell-init-hook ()
   (interactive)
   (heaven-and-hell-clean-load-theme (heaven-and-hell-theme-switch-to) t))
-
-(global-set-key (kbd "<f6>") 'heaven-and-hell-toggle-theme)
-
-;; Reset to default emacs theme
-(global-set-key (kbd "C-c <f6>") 'heaven-and-hell-load-default-emacs-theme)
-
-(add-hook 'after-init-hook 'heaven-and-hell-init-hook)
