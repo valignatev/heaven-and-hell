@@ -1,16 +1,17 @@
-;;; heaven-and-hell.el --- package for easy toggling of light/dark color themes -*- lexical-binding: t; -*-
+;;; heaven-and-hell.el --- easy toggle light/dark themes -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018 by Valentin Ignatev and contributors
 
 ;; Author: Valentin Ignatev <valentignatev@gmail.com>
 ;; URL: https://github.com/valignatev/heaven-and-hell
 ;; Version: 0.0.1
-;; Keywords: Colorscheme, Theme, Eyes
+;; Package-Requires: ((emacs "24.4"))
+;; Keywords: faces
 
 ;;; Commentary:
 ;; Light themes are easier on the eyes when sun is up.
 ;; But when it's dark around - you better to use dark theme.
-;; This package makes process of switching betwee light and dark
+;; This package makes process of switching between light and dark
 ;; theme as easy as hitting single keystroke.
 
 ;;; Code:
