@@ -36,7 +36,6 @@
 ;; (global-set-key (kbd "C-c <f6>") 'heaven-and-hell-load-default-theme)
 ;; (global-set-key (kbd "<f6>") 'heaven-and-hell-toggle-theme)
 
-
 ;;; Code:
 
 (defvar heaven-and-hell-themes
