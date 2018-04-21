@@ -78,7 +78,7 @@ And vise-versa."
 (defun heaven-and-hell-load-default-theme ()
   "Disable all custom themes e.g. load default Emacs theme."
   (interactive)
-  (mapcar #'disable-theme custom-enabled-themes))
+  (custom-set-variables '(custom-enabled-themes nil)))
 
 ;;;###autoload
 (defun heaven-and-hell-init-hook ()
