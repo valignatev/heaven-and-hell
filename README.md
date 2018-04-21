@@ -48,11 +48,11 @@ With `use-package` (including example config):
   :init
   (setq heaven-and-hell-theme-type 'dark) ;; Omit to use light by default
   (setq heaven-and-hell-themes
-	'((light . tsdh-light)
-	  (dark . tsdh-dark))) ;; Themes can be the list: (dark . (tsdh-dark wombat))
+        '((light . tsdh-light)
+          (dark . tsdh-dark))) ;; Themes can be the list: (dark . (tsdh-dark wombat))
   :hook (after-init . heaven-and-hell-init-hook)
   :bind (("C-c <f6>" . heaven-and-hell-load-default-theme)
-	 ("<f6>" . heaven-and-hell-toggle-theme)))
+         ("<f6>" . heaven-and-hell-toggle-theme)))
 ```
 
 ### With `straight.el`
@@ -75,7 +75,7 @@ For `use-package` configuration look above in installation section
 ;; Themes can be the list: (dark . (tsdh-dark tango-dark))
 (setq heaven-and-hell-themes
       '((light . tsdh-light)
-	(dark . tsdh-dark)))
+        (dark . tsdh-dark)))
 
 ;; Add init-hook so heaven-and-hell can load your theme
 (add-hook 'after-init-hook 'heaven-and-hell-init-hook)
