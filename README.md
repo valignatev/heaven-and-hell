@@ -49,7 +49,7 @@ With `use-package` (including example config):
   (setq heaven-and-hell-theme-type 'dark) ;; Omit to use light by default
   (setq heaven-and-hell-themes
 	'((light . tsdh-light)
-	  (dark . tsdh-dark)))
+	  (dark . tsdh-dark))) ;; Themes can be the list: (dark . (tsdh-dark wombat))
   :hook (after-init . heaven-and-hell-init-hook)
   :bind (("C-c <f6>" . heaven-and-hell-load-default-theme)
 	 ("<f6>" . heaven-and-hell-toggle-theme)))
@@ -72,6 +72,7 @@ For `use-package` configuration look above in installation section
 
 ;; Set preferred light and dark themes
 ;; default light is emacs default theme, default dark is wombat
+;; Themes can be the list: (dark . (tsdh-dark tango-dark))
 (setq heaven-and-hell-themes
       '((light . tsdh-light)
 	(dark . tsdh-dark)))
