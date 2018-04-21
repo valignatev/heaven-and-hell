@@ -51,7 +51,7 @@ With `use-package` (including example config):
 	'((light . #'tsdh-light)
 	  (dark . #'tsdh-dark)))
   :hook (after-init . heaven-and-hell-init-hook)
-  :bind (("C-c <f6>" . heaven-and-hell-load-default-emacs-theme)
+  :bind (("C-c <f6>" . heaven-and-hell-load-default-theme)
 	 ("<f6>" . heaven-and-hell-toggle-theme)))
 ```
 
@@ -80,7 +80,7 @@ For `use-package` configuration look above in installation section
 (add-hook 'after-init-hook 'heaven-and-hell-init-hook)
 
 ;; Set keys to toggle theme and return to default emacs theme
-(global-set-key (kbd "C-c <f6>") 'heaven-and-hell-load-default-emacs-theme)
+(global-set-key (kbd "C-c <f6>") 'heaven-and-hell-load-default-theme)
 (global-set-key (kbd "<f6>") 'heaven-and-hell-toggle-theme)
 ```
 

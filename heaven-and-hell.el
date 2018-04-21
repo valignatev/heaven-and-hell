@@ -31,7 +31,7 @@
 (defun heaven-and-hell-clean-load-theme (theme)
   "Same as `load-theme' but reset all theme settings before loading new theme.
 THEME - theme to load or nil, nil means reset all themes and fallback to Emacs default"
-  (heaven-and-hell-load-default-emacs-theme)
+  (heaven-and-hell-load-default-theme)
   (when theme
     (load-theme theme t)))
 
@@ -46,7 +46,7 @@ And vise-versa."
   (heaven-and-hell-clean-load-theme (heaven-and-hell-theme-switch-to)))
 
 ;;;###autoload
-(defun heaven-and-hell-load-default-emacs-theme ()
+(defun heaven-and-hell-load-default-theme ()
   "Reset all theme settings and e.g. load default Emacs theme."
   (interactive)
   (mapcar #'disable-theme custom-enabled-themes))
