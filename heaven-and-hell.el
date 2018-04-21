@@ -26,8 +26,8 @@
 ;; Set preferred light and dark themes
 ;; Default light is Emacs default theme, default dark is wombat
 ;; (setq heaven-and-hell-themes
-;;       '((light . 'tsdh-light)
-;; 	(dark . 'tsdh-dark)))
+;;       '((light . tsdh-light)
+;; 	(dark . tsdh-dark)))
 ;;
 ;; Add init-hook so heaven-and-hell can load your theme
 ;; (add-hook 'after-init-hook 'heaven-and-hell-init-hook)
@@ -40,7 +40,7 @@
 
 (defvar heaven-and-hell-themes
   '((light . nil)
-    (dark . 'wombat))
+    (dark . wombat))
   "Associate light and dark theme with this variable.")
 
 (defvar heaven-and-hell-theme-type 'light
@@ -48,7 +48,7 @@
 
 (defun heaven-and-hell-theme-switch-to ()
   "Return theme which should be loaded according to current `heaven-and-hell-theme-type'."
-  (eval (cdr (assoc heaven-and-hell-theme-type heaven-and-hell-themes))))
+  (cdr (assoc heaven-and-hell-theme-type heaven-and-hell-themes)))
 
 (defun heaven-and-hell-clean-load-theme (theme)
   "Same as `load-theme' but reset all theme settings before loading new theme.
