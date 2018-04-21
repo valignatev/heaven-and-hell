@@ -18,7 +18,7 @@
 
 (defvar heaven-and-hell-themes
   '((light . nil)
-    (dark . #'wombat))
+    (dark . 'wombat))
   "Associate light and dark theme with this variable.")
 
 (defvar heaven-and-hell-theme-type 'light
