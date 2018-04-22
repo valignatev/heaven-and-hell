@@ -88,7 +88,11 @@ For `use-package` configuration look above in installation section
 
 ## Contribution
 
-Feel free to open issue, submit pull request or share it anywhere in the Internet :)
+Have trouble with installation? Found a bug? Want a new feature? Feel free to [open an issue](https://github.com/valignatev/heaven-and-hell/issues/new)!
+
+Want to fix a bug or add something new yourself? Feel free to submit pull request!
+
+Also, don't hesitate to share it anywhere in the Internet :)
 
 ## License
 
