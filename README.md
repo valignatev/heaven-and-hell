@@ -1,4 +1,4 @@
-# Heaven and Hell [![Emacs](https://img.shields.io/badge/Emacs-24-8e44bd.svg)](https://www.gnu.org/software/emacs/) [![Emacs](https://img.shields.io/badge/Emacs-25-8e44bd.svg)](https://www.gnu.org/software/emacs/) [![Emacs](https://img.shields.io/badge/Emacs-26-8e44bd.svg)](https://www.gnu.org/software/emacs/)
+# Heaven and Hell [![Emacs](https://img.shields.io/badge/Emacs-24-8e44bd.svg)](https://www.gnu.org/software/emacs/) [![Emacs](https://img.shields.io/badge/Emacs-25-8e44bd.svg)](https://www.gnu.org/software/emacs/) [![Emacs](https://img.shields.io/badge/Emacs-26-8e44bd.svg)](https://www.gnu.org/software/emacs/)    [![MELPA](https://melpa.org/packages/heaven-and-hell-badge.svg)](https://melpa.org/#/heaven-and-hell) [![MELPA Stable](https://stable.melpa.org/packages/heaven-and-hell-badge.svg)](https://stable.melpa.org/#/heaven-and-hell)
 
 ![Logo](logo.jpg)
 
@@ -25,26 +25,14 @@ Hope it'll be useful to anybody else. Cheers!
 
 ## Installation
 
-Heaven and Hell is not yet in melpa. I'm working on that, but for now you have to install it from my repo.
+`heaven-and-hell` is available in [Melpa](https://melpa.org/#/heaven-and-hell).
 
-### With `use-package` or manual
-
-First clone the repo:
-
-```shell
-git clone https://github.com/valignatev/heaven-and-hell.git your/site/elisp/path
-```
-
-Manually:
-
-```emacs-lisp
-(require 'heaven-and-hell "your/site/elisp/path/heaven-and-hell/heaven-and-hell.el")
-```
+### With `use-package`
 
 With `use-package` (including example config):
 ```emacs-lisp
 (use-package heaven-and-hell
-  :load-path "your/site/elisp/path/heaven-and-hell"
+  :ensure t
   :init
   (setq heaven-and-hell-theme-type 'dark) ;; Omit to use light by default
   (setq heaven-and-hell-themes
@@ -58,8 +46,21 @@ With `use-package` (including example config):
 ### With `straight.el`
 
 ```emacs-lisp
-(straight-use-package
- '(heaven-and-hell :type git :host github :repo "valignatev/heaven-and-hell"))
+(straight-use-package 'heaven-and-hell)
+```
+
+### Manually
+
+First clone the repo:
+
+```shell
+git clone https://github.com/valignatev/heaven-and-hell.git your/site/elisp/path
+```
+
+Then add this in your `init.el`:
+
+```emacs-lisp
+(require 'heaven-and-hell "your/site/elisp/path/heaven-and-hell/heaven-and-hell.el")
 ```
 
 ## Example configuration
