@@ -61,7 +61,7 @@ Themes will be loaded if they weren't loaded previously."
     (let ((themes (if (listp theme-or-themes) theme-or-themes `(,theme-or-themes))))
       (dolist (theme themes)
 	(unless (custom-theme-p theme)
-	  (load-theme theme)))
+	  (load-theme theme t)))
       (custom-set-variables `(custom-enabled-themes (quote ,themes))))))
 
 ;;;###autoload
