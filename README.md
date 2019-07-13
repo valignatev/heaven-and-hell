@@ -38,6 +38,8 @@ With `use-package` (including example config):
   (setq heaven-and-hell-themes
         '((light . tsdh-light)
           (dark . tsdh-dark))) ;; Themes can be the list: (dark . (tsdh-dark wombat))
+  ;; Optionall, load themes without asking for confirmation.
+  (setq heaven-and-hell-load-theme-no-confirm t)
   :hook (after-init . heaven-and-hell-init-hook)
   :bind (("C-c <f6>" . heaven-and-hell-load-default-theme)
          ("<f6>" . heaven-and-hell-toggle-theme)))
@@ -77,6 +79,8 @@ For `use-package` configuration look above in installation section
 (setq heaven-and-hell-themes
       '((light . tsdh-light)
         (dark . tsdh-dark)))
+;; Optionall, load themes without asking for confirmation.
+(setq heaven-and-hell-load-theme-no-confirm t)
 
 ;; Add init-hook so heaven-and-hell can load your theme
 (add-hook 'after-init-hook 'heaven-and-hell-init-hook)
@@ -97,6 +101,7 @@ For [Doom Emacs](https://github.com/hlissner/doom-emacs/)
   (setq heaven-and-hell-themes
         '((light . doom-one-light)
           (dark . doom-vibrant)))
+  ;; Optionall, load themes without asking for confirmation.
   (setq heaven-and-hell-load-theme-no-confirm t)
   (map!
    :g "<f6>" 'heaven-and-hell-toggle-theme
