@@ -86,6 +86,26 @@ For `use-package` configuration look above in installation section
 (global-set-key (kbd "<f6>") 'heaven-and-hell-toggle-theme)
 ```
 
+For [Doom Emacs](https://github.com/hlissner/doom-emacs/)
+
+``` emacs-lisp
+;; In packages.el
+(package! heaven-and-hell)
+
+;; In config.el
+(after! heaven-and-hell
+  (setq heaven-and-hell-themes
+        '((light . doom-one-light)
+          (dark . doom-vibrant)))
+  (setq heaven-and-hell-load-theme-no-confirm t)
+  (map!
+   :g "<f6>" 'heaven-and-hell-toggle-theme
+   ;; Sometimes loading default theme is broken. I couldn't figured that out yet.
+   :leader "<f6>" 'heaven-and-hell-load-default-theme))
+
+(add-hook 'after-init-hook 'heaven-and-hell-init-hook)
+```
+
 ## Contribution
 
 Have trouble with installation? Found a bug? Want a new feature? Feel free to [open an issue](https://github.com/valignatev/heaven-and-hell/issues/new)!
