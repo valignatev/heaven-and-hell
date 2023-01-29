@@ -33,7 +33,7 @@ With `use-package` (including example config):
 ```emacs-lisp
 (use-package heaven-and-hell
   :ensure t
-  :init
+  :config
   (setq heaven-and-hell-theme-type 'dark) ;; Omit to use light by default
   (setq heaven-and-hell-themes
         '((light . tsdh-light)
